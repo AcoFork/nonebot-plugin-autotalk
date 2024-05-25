@@ -1,4 +1,5 @@
 import os
+import base64
 from nonebot import on_message
 from nonebot.adapters import Bot, Event
 from nonebot.adapters.onebot.v11 import MessageSegment
@@ -20,6 +21,7 @@ async def handle_reply(event: Event):
     
     text_found = False
     image_found = False
+    voice_found = False
     reply_msg = ""
     image = None
 
@@ -50,9 +52,27 @@ async def handle_reply(event: Event):
             except Exception as e:
                 logging.error(f"Failed to prepare image: {e}")
 
-    # 如果既没有找到图片也没有找到文本
-    if not text_found and not image_found:
-        logging.warning(f"No corresponding text or image found for: {file_path}")
+    # 然后检查是否有对应的语音文件
+    for ext in [".mp3", ".wav"]:
+        voice_path = file_path + ext
+        if os.path.exists(voice_path):
+            logging.info(f"Voice file found: {voice_path}")  # 调试信息
+            # 读取语音文件并编码为Base64字符串
+            try:
+                with open(voice_path, "rb") as voice_file:
+                    voice_data = voice_file.read()
+                    voice_base64 = base64.b64encode(voice_data).decode("utf-8")
+                    voice_segment = MessageSegment.record(f"base64://{voice_base64}")
+                    await reply.send(voice_segment)
+                    voice_found = True
+                    logging.info(f"Sent voice: {voice_path}")  # 调试信息
+                    break  # 发送一段语音后停止
+            except Exception as e:
+                logging.error(f"Failed to send voice: {e}")
+
+    # 如果既没有找到图片也没有找到文本也没有找到语音
+    if not text_found and not image_found and not voice_found:
+        logging.warning(f"No corresponding text, image, or voice found for: {file_path}")
 
 # 在插件加载时检查目录是否存在，如果不存在则创建
 def check_reply_dir():
