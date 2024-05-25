@@ -3,8 +3,8 @@ autotalk是一个适用于NoneBot的模板回复插件（发送图片仅适用�
 
 
 ## 安装教程
- - 前往最新的Release，下载`__init__.py`文件（不要直接下载仓库里的同名文件，某些更改可能会导致功能异常）
- - 使用nb-cli创建一个新插件，将下载的 `__init__.py` 替换自动生成的同名文件。我的路径在：`...\nonebot\acofork-test\acofork_test\plugins\autotalk\__init__.py`
+ - 前往最新的Release，下载`autotalk.xxx.py`文件
+ - 将下载的 `autotalk.xxx.py` 放入你的NoneBot的`plugins`文件夹，启动NoneBot，若看到`[Succeeded] to load plugin "autotalk" from "xxx.plugins.autotalk"`即成功加载
  - *可以在仓库中下载 `测试.txt` 放入插件创建的`qtoa`文件夹，然后向Bot发送 `测试` 查看插件效果*
    
 ## 使用教程
