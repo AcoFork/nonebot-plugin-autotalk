@@ -18,6 +18,7 @@ autotalk是一个适用于NoneBot的模板回复插件（发送图片仅适用�
 ## 目前的不足
  - 不可发送多张图片
  - 无法设置权限规则，默认谁都可以触发命令
+ - 更高级的功能请去尝试lgc233大佬的插件：[NoneBot-Plugin-AutoReply](https://github.com/lgc-NB2Dev/nonebot-plugin-autoreply)
 
 ## 例图
 ![例图](eg.png)
