@@ -4,7 +4,7 @@ autotalk是一个适用于NoneBot的模板回复插件（发送图片仅适用�
 
 ## 安装教程
  - 前往最新的Release，下载`autotalk.xxx.py`文件
- - 将下载的 `autotalk.xxx.py` 放入你的NoneBot的`plugins`文件夹，启动NoneBot，若看到`[Succeeded] to load plugin "autotalk" from "xxx.plugins.autotalk"`即成功加载
+ - 将下载的 `autotalk.xxx.py` 放入你的NoneBot的`plugins`文件夹即可
  - *可以在仓库中下载 `测试.txt` 放入插件创建的`qtoa`文件夹，然后向Bot发送 `测试` 查看插件效果*
    
 ## 使用教程
