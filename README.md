@@ -1,5 +1,5 @@
 # nonebot-plugin-autotalk
-autotalk是一个适用于NoneBot的模板回复插件（发送图片仅适用于OneBotv11适配器）。**所有代码均使用GPT构建**
+autotalk是一个适用于NoneBot的模板回复插件、。**所有代码均使用GPT构建**
 
 
 ## 安装教程
