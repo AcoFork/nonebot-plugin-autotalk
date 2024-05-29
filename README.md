@@ -3,7 +3,7 @@ autotalk是一个适用于NoneBot的模板回复插件、。**所有代码均使
 
 
 ## 安装教程
- - 前往最新的Release，下载`autotalk.xxx.py`文件
+ - 前往最新的Release，下载`autotalk.py`文件
  - 将下载的 `autotalk.xxx.py` 放入你的NoneBot的`plugins`文件夹即可
    
 ## 使用教程
