@@ -2,7 +2,7 @@
 autotalk是一个适用于NoneBot的模板回复插件、。**所有代码均使用GPT构建**
 
 ## 阅前提醒
- - **此`README.md`仅适用于最新的`Release`
+ - **此`README.md`仅适用于最新的`Release`**
 
 
 ## 安装教程
