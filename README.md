@@ -6,8 +6,8 @@ autotalk是一个适用于NoneBot的模板回复插件。**所有代码均使用
 
 
 ## 安装教程
- - 前往最新的Release，按需下载 `autotalk.py`
- - 将下载的所有 `autotalk.py` 放入你的NoneBot的 `plugins` 文件夹即可
+ - 前往最新的Release，下载所有“ `autotalk` 开头的文件”
+ - 将下载的“ `autotalk` 开头的文件”放入你的NoneBot的 `plugins` 文件夹即可
    
 ## 使用教程
  - 插件第一次载入时，会在BOT根目录创建一个名为 `qtoa` 的文件夹
